@@ -9,14 +9,14 @@ settings:
 ### Preloader
 preloader:
   logo:
-    image: "assets/img/logo2.png"
-    alt: "TamilSelvan"
+    image: "assets/img/logo.png"
+    alt: "TamilSelvan-Logo"
 
 ### Header
 header:
   logo:
-    image: "assets/img/logo2.png"
-    alt: "TamilSelvan"
+    image: "assets/img/logo.png"
+    alt: "TamilSelvan-Logo"
 
 ### Social
 social:
