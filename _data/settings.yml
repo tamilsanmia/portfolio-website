@@ -10,13 +10,13 @@ settings:
 preloader:
   logo:
     image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+    alt: "TamilSelvan"
 
 ### Header
 header:
   logo:
     image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+    alt: "TamilSelvan"
 
 ### Social
 social:
@@ -24,18 +24,18 @@ social:
     icon: "fab fa-twitter"
     url: "http://twitter.com"
 
-  - title: "Dribbble"
-    icon: "fab fa-dribbble"
-    url: "http://dribbble.com"
+  - title: "linkedin"
+    icon: "fab fa-linkedin" />"
+    url: "https://www.linkedin.com/in/thetamilselvan/"
 
-  - title: "Behance"
-    icon: "fab fa-behance"
-    url: "http://behance.com"
+  - title: "Instagram"
+    icon: "fab fa-instagram" />"
+    url: "https://www.instagram.com/the_tamilselvan/"
 
 ### Footer
 footer:
-  developer: "Developed by <strong>bslthemes</strong>"
-  copyright: "<strong>Luique</strong>. All rights reserved"
+  developer: "Developed by <strong>Tamilselvan</strong>"
+  copyright: "<strong>TamilSelvan</strong>. All rights reserved"
 
 ### Portfolio Filters Settings
 portfolio:
