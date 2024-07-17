@@ -6,23 +6,23 @@
 ### Hero [ hero-image ]
 hero:
   image: "assets/img/profile2.png"
-  image_alt: "Zoé Miller"
-  title: "<b>Zoé</b> Miller"
+  image_alt: "TamilSelvan"
+  title: "<b>Tamil</b> Selvan"
   before_title: "Hello, <b>my name is</b>"
-  after_title: "I am <strong>Web Developer</strong>"
-  description: "From France, Paris. I have rich experience in web design, also I am good at wordpress. I love to talk with you about our unique."
+  after_title: "I am <strong>DevOps Engineer</strong>"
+  description: "Passionate about Linux and cloud technologies with technical experience in live environments and strong hands on technical knowledge."
   button1:
     label: "Download CV"
-    link: "https://drive.google.com/"
+    link: "https://drive.google.com/file/d/1SS2-neA-T4kTLRhgymVIa722b2_WsPiq/view?usp=sharing"
   button2:
     label: "My Skills"
     link: "#skills-section"
-  bg_title: "Web Developer"
+  bg_title: "DevOps Engineer"
   info:
-    - num: "12 <strong>+</strong>"
+    - num: "1 <strong>+</strong>"
       value: "Years of <strong>Experience</strong>"
 
-    - num: "330"
+    - num: "15"
       value: "Completed <strong>Projects</strong>"
 
 ### Services [ services ]
@@ -107,38 +107,28 @@ resume:
   education:
     title: "Education"
     items:
-      - name: "CoderHouse Courses"
-        subname: "Backend Programming"
+      - name: "Graduation"
+        subname: "Hindusthan College of Engineering and Technology"
+        period: "2018 - 2022"
+        text: "B.Tech in Information Technology"
+
+      - name: "Higher Secondary Education"
+        subname: "Paramveer Matriculation Higher Secondary School"
         period: "2014 - 2016"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "Lviv National Academy of Arts"
-        subname: "Faculty of Design"
-        period: "2012 - 2014"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "IT Future"
-        subname: "High School"
-        period: "2010 - 2012"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "HSE"
 
   experience:
     title: "Experience"
     items:
-      - name: "UI Head &amp; Manager"
-        subname: "Soft Tech Inc."
-        period: "2020 - <b>Present</b>"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      - name: "Trainee DevOps Engineer"
+        subname: "Ladybird Web Solution Pvt Ltd"
+        period: "June 2023 - <b>Present</b>"
+        text: "As a DevOps Engineer at Ladybird Web Solutions Pvt Ltd. I was responsible for deploying and managing Faveo Helpdesk Ticketing system on both on premise and cloud. I also played a major role in deploying the Faveo Helpdesk Multi-Tenant model on Digital Ocean Kubernetes Cluster by setting up CI/CD Pipeline with automation and auto scaling."
 
-      - name: "UI / UX Specialist"
-        subname: "Kana Design Studio"
-        period: "2018 - 2020"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "Plugins Developer"
-        subname: "Fiverr.com"
-        period: "2016 - 2018"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      - name: "Wordpress Developer"
+        subname: "Freelance"
+        period: "March 2022 - <b>Present</b>"
+        text: "Highly skilled WordPress Developer with 2 years of experience in developing custom themes and plugins, optimizing website performance, and implementing security measures. Proven track record in increasing website traffic by 25%, improving user engagement by 10%, and reducing page load times by 30%. Collaborative team player with exceptional technical skills and a passion for delivering innovative solutions."
 
 
 ### Testimonials [ testimonials ]
@@ -161,16 +151,6 @@ testimonials:
     - image: "assets/img/testimonials/testi4-4.jpg"
       name: "Roy Wang"
       role: "Manager GYM"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-    - image: "assets/img/testimonials/testi4-3.jpg"
-      name: "Jennifer Smith"
-      role: "CEO &amp; Founder"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-    - image: "assets/img/testimonials/testi4-5.jpg"
-      name: "Paul Freeman"
-      role: "Photographer"
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
 
@@ -257,7 +237,7 @@ contacts:
   list:
     - label: "Address"
       icon: "far fa-map"
-      text: "North Tower, Toronto, Canada"
+      text: "Dharmapuri, Tamil Nadu, India"
 
     - label: "Freelance"
       icon: "far fa-user"
@@ -265,11 +245,11 @@ contacts:
 
     - label: "Email"
       icon: "far fa-envelope"
-      text: "zoe.miller@mydomain.com"
+      text: "tamilsanmia@gmail.com"
 
     - label: "Phone"
       icon: "far fa-address-book"
-      text: "+1 900 - 900 - 9000"
+      text: "+91 9585 - 998 - 228"
 
 ### Portfolio [ portfolio ]
 #items generates from dir /_works/*
