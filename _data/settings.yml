@@ -20,10 +20,6 @@ header:
 
 ### Social
 social:
-  - title: "Twitter"
-    icon: "fab fa-twitter"
-    url: "http://twitter.com"
-
   - title: "Linkedin"
     icon: "fab fa-linkedin"
     url: "https://www.linkedin.com/in/thetamilselvan/"
@@ -41,14 +37,8 @@ footer:
 portfolio:
   layout: "list" # select works layout options: "Grid" or "List"
   filters:
-    - name: "UI UX Design"
-      slug: "ui-ux-design"
+    - name: "Web Development"
+      slug: "web-development"
 
-    - name: "Photography"
-      slug: "photography"
-
-    - name: "Development"
-      slug: "development"
-
-    - name: "Branding"
-      slug: "branding"
+    - name: "DevOps"
+      slug: "devops"
