@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-18T09:07:25+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">TamilSelvan</title><subtitle>Portfolio</subtitle><author><name>TamilSelvan</name></author><entry><title type="html">Install Prometheus Operator with Grafana</title><link href="http://localhost:4000/devops/2024/07/18/prometheus/" rel="alternate" type="text/html" title="Install Prometheus Operator with Grafana" /><published>2024-07-18T00:00:00+05:30</published><updated>2024-07-18T00:00:00+05:30</updated><id>http://localhost:4000/devops/2024/07/18/prometheus</id><content type="html" xml:base="http://localhost:4000/devops/2024/07/18/prometheus/"><![CDATA[<h1 id="setting-up-prometheus-operator-with-helm-and-nginx-ingress">Setting Up Prometheus Operator with Helm and Nginx Ingress</h1>
+I".<h1 id="setting-up-prometheus-operator-with-helm-and-nginx-ingress">Setting Up Prometheus Operator with Helm and Nginx Ingress</h1>
 
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
@@ -111,4 +111,5 @@ spec:
 kubectl describe certificate prometheus-tls -n monitoring
 kubectl describe certificate grafana-tls -n monitoring
 </code></pre></div></div>
-<p>These steps should help you set up Prometheus and Grafana with Ingress and TLS certificates in your Kubernetes cluster.</p>]]></content><author><name>TamilSelvan M</name></author><category term="DevOps" /><category term="DevOps" /><summary type="html"><![CDATA[Setting Up Prometheus Operator with Helm and Nginx Ingress]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/blog9.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/blog9.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>These steps should help you set up Prometheus and Grafana with Ingress and TLS certificates in your Kubernetes cluster.</p>
+:ET
