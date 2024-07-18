@@ -100,10 +100,10 @@ resume:
         period: "2018 - 2022"
         text: "B.Tech in Information Technology"
 
-      - name: "Higher Secondary Education"
+      - name: "Schools"
         subname: "Paramveer Matriculation Higher Secondary School"
         period: "2014 - 2016"
-        text: "HSE"
+        text: "Higher Secondary Education"
 
   experience:
     title: "Experience"
