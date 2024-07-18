@@ -3,7 +3,7 @@ layout: post
 title:  "Install Prometheus Operator with Grafana"
 date:   2024-07-18
 category: DevOps
-image: assets/img/blog/blog9.jpg
+image: assets/img/blog/prometheus-grafana.png
 author: TamilSelvan M
 tags: DevOps
 ---
