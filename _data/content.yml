@@ -6,7 +6,7 @@
 ### Hero [ hero-image ]
 hero:
   image: "assets/img/profile2.jpg"
-  image_alt: "TamilSelvan"
+  image_alt: "TamilSelvan-Profile"
   title: "<b>Tamil</b> Selvan"
   before_title: "Hello, <b>my name is</b>"
   after_title: "I am <strong>DevOps Engineer</strong>"
