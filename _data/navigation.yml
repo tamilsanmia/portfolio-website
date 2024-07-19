@@ -21,15 +21,16 @@ main:
     url: "#skills-section"
     parent: 0
 
+  # Resume
+  - title: "Resume"
+    url: "#resume-section"
+    parent: 0
+
   # Works
   - title: "Works"
     url: "#works-section"
     parent: 0
 
-  # Resume
-  - title: "Resume"
-    url: "#resume-section"
-    parent: 0
 
   # Testimonials
   #- title: "Testimonials"

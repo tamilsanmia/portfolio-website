@@ -45,7 +45,7 @@ helm install prometheus prometheus-community/kube-prometheus-stack --namespace m
 
 Create an Ingress resource for Prometheus by creating a file named `prometheus-ingress.yml` with the following content:
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

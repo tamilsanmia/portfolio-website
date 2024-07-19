@@ -37,8 +37,8 @@ footer:
 portfolio:
   layout: "list" # select works layout options: "Grid" or "List"
   filters:
-    - name: "Web Development"
-      slug: "web-development"
-
     - name: "DevOps"
       slug: "devops"
+
+    - name: "Web Development"
+      slug: "web-development"

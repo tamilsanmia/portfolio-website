@@ -5637,6 +5637,18 @@ a.wp-block-button__link {
 	}
 }
 
+.skills-item .value {
+    display: none !important;
+}
+
+.skills-item .dots {
+    display: none !important;
+}
+
+.skills-item {
+    min-height: 120px;
+}
+
 #results-container {
 	margin-top: 15px;
 }

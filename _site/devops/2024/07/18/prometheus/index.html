@@ -134,13 +134,13 @@
 											
 											
 											<li class="menu-item">
-												<a class="splitting-text-anim-2" data-splitting="chars" href="/#works-section">Works</a>
+												<a class="splitting-text-anim-2" data-splitting="chars" href="/#resume-section">Resume</a>
 												
 											</li>
 											
 											
 											<li class="menu-item">
-												<a class="splitting-text-anim-2" data-splitting="chars" href="/#resume-section">Resume</a>
+												<a class="splitting-text-anim-2" data-splitting="chars" href="/#works-section">Works</a>
 												
 											</li>
 											
@@ -233,7 +233,7 @@
 	</div>
 </section>
 
-<!-- Single Post Image -->
+<!-- Single Post Image 
 <div class="section section-inner m-image-large">
 	<div class="container">
 		<div class="v-line-right v-line-top"><div class="v-line-block"><span></span></div></div>
@@ -244,6 +244,7 @@
 		
 	</div>
 </div>
+-->
 
 <!-- Section - Blog -->
 <section class="section section-inner m-archive">
@@ -289,32 +290,32 @@ helm repo update
 
 <p>Create an Ingress resource for Prometheus by creating a file named <code class="language-plaintext highlighter-rouge">prometheus-ingress.yml</code> with the following content:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: prometheus-ingress
-  namespace: monitoring
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-    nginx.ingress.kubernetes.io/rewrite-target: /
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">prometheus-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">monitoring</span>
+  <span class="na">annotations</span><span class="pi">:</span>
+    <span class="na">cert-manager.io/cluster-issuer</span><span class="pi">:</span> <span class="s">letsencrypt-prod</span>
+    <span class="na">nginx.ingress.kubernetes.io/rewrite-target</span><span class="pi">:</span> <span class="s">/</span>
 
-spec:
-  ingressClassName: nginx
-  rules:
-  - host: prometheus.faveocloud.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: prometheus-kube-prometheus-prometheus
-            port:
-              number: 9090
-  tls:
-  - hosts:
-    - prometheus.faveocloud.com
-    secretName: prometheus-tls
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ingressClassName</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">rules</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">prometheus.faveocloud.com</span>
+    <span class="na">http</span><span class="pi">:</span>
+      <span class="na">paths</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+        <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+        <span class="na">backend</span><span class="pi">:</span>
+          <span class="na">service</span><span class="pi">:</span>
+            <span class="na">name</span><span class="pi">:</span> <span class="s">prometheus-kube-prometheus-prometheus</span>
+            <span class="na">port</span><span class="pi">:</span>
+              <span class="na">number</span><span class="pi">:</span> <span class="m">9090</span>
+  <span class="na">tls</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">hosts</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">prometheus.faveocloud.com</span>
+    <span class="na">secretName</span><span class="pi">:</span> <span class="s">prometheus-tls</span>
 </code></pre></div></div>
 <p>Apply the Ingress resource</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply -f prometheus-ingress.yml

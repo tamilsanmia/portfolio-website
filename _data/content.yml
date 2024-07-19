@@ -32,59 +32,94 @@ services:
   bg_title: "Services"
 
   items:
-    - title: "Web Design &amp; Logo"
-      subtitle: "Web Development"
-      text: "Web designers craft the overall vision &amp; plan for a website layout. Professional logo development: Business, Company, or Personal."
+    - title: "Web Designing"
+ #     subtitle: "Web Development"
+      text: "Exquisitely crafted website designing services from concept to creation tailored to elevate your brand’s online presence."
+      button_label: "See Pricing"
+      button_link: "#pricing-section"
+      
+      
+    - title: "WordPress Development"
+ #     subtitle: "Web Development"
+      text: "Innovative WordPress solutions by experienced developers that empowers your business visibility online."
       button_label: "See Pricing"
       button_link: "#pricing-section"
 
-    - title: "iOS &amp; Android"
-      subtitle: "Apps Development"
-      text: "Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing."
+    - title: "Ecommerce Developement"
+ #     subtitle: "Web Development"
+      text: "Build a high-converting and stunning online store that drives sales with our professional ecommerce development services."
       button_label: "See Pricing"
       button_link: "#pricing-section"
 
-    - title: "Unity &amp; Unreal Engine"
-      subtitle: "Game Development"
-      text: "Creating games &amp; describes the design, development and release of a game. Developing unique mobile android and ios games."
+
+    - title: "B2B/Saas Marketing"
+ #     subtitle: "Web Development"
+      text: "Empowering your SAAS business with state of the art B2B/SaaS marketing strategies for exponential business growth."
+      button_label: "See Pricing"
+      button_link: "#pricing-section"
+      
+      
+    - title: "Cloud Computing"
+#      subtitle: "Cloud Computing"
+      text: "Provides the best cloud-neutral solution for hybrid and multi-cloud strategies."
       button_label: "See Pricing"
       button_link: "#pricing-section"
 
+
+    - title: "DevOps"
+#      subtitle: "Server Management"
+      text: "DevOps as a Service system helps businesses to ensure that the organization achieves desired outcomes."
+      button_label: "See Pricing"
+      button_link: "#pricing-section"
+      
+      
 ### Skills [ skills ]
 skills:
   title: "Professional Skills"
-  subtitle: "my <b>Talent</b>"
+  subtitle: "my <br>Talent"
   bg_title: "Skills"
 
   column1:
     items:
-      - label: "PHP" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "85" #0-100 progress in %
+      - label: "Cloud Services"
+        text: "AWS<br>GCP<br>Digital Ocean"
 
-      - label: "Python" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+      - label: "DB"
+        text: "MySQL<br>MariaDB"
+
+      - label: "Monitoring Tools"
+        text: "Nagios<br>Zabbix<br>Prometheus<br>Grafana"
+
+      - label: "Front-end"
+        text: "HTML/CSS<br>Javasript<br>Bootstrap"
 
   column2:
     items:
-      - label: "JavaScript" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+      - label: "OS Platforms"
+        text: "Windows Server<br>Linux(Dedian and RedHat Based)" 
 
-      - label: "React" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "70" #0-100 progress in %
+      - label: "CI/CD"
+        text: "Jenkins<br>Gitlab,Ansible,ArgoCD"
+
+      - label: "Log Managaement"
+        text: "Elesticsearch<br>Fluentbit<br>Kibana"
+
+      - label: "Back-end"
+        text: "PHP<br>APIs"
 
   column3:
     items:
-      - label: "WordPress" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "90" #0-100 progress in %
+      - label: "Web Servers"
+        text: "Apache<br>NGINX<br>Litespeed" 
 
-      - label: "Adobe XD" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "80" #0-100 progress in %
+      - label: "Scripting"
+        text: "Shell/Bash<br>Python"
+
+      - label: "Container Orchestration"
+        text: "Docker<br>Kubernetes"
+
+      - label: "CMS Platforms"
+        text: "Wordpress<br>Shopify"
 
 ### Resume [ resume ]
 resume:
@@ -110,13 +145,13 @@ resume:
     items:
       - name: "Trainee DevOps Engineer"
         subname: "Ladybird Web Solution Pvt Ltd"
-        period: "June 2023 - <b>Present</b>"
-        text: "As a DevOps Engineer at Ladybird Web Solutions Pvt Ltd. I was responsible for deploying and managing Faveo Helpdesk Ticketing system on both on premise and cloud. I also played a major role in deploying the Faveo Helpdesk Multi-Tenant model on Digital Ocean Kubernetes Cluster by setting up CI/CD Pipeline with automation and auto scaling."
+        period: "Jun 2023 - <b>Present</b>"
+        text: "As a DevOps Engineer at Ladybird Web Solutions Pvt Ltd. I was responsible for deploying and managing Faveo Helpdesk Ticketing system on both on premise and cloud."
 
       - name: "Wordpress Developer"
         subname: "Freelance"
-        period: "March 2022 - <b>Present</b>"
-        text: "Highly skilled WordPress Developer with 2 years of experience in developing custom themes and plugins, optimizing website performance, and implementing security measures. Proven track record in increasing website traffic by 25%, improving user engagement by 10%, and reducing page load times by 30%. Collaborative team player with exceptional technical skills and a passion for delivering innovative solutions."
+        period: "Mar 2022 - <b>Present</b>"
+        text: "Highly skilled WordPress Developer with 2 years of experience in developing custom themes and plugins, optimizing website performance, and implementing security measures."
 
 
 ### Testimonials [ testimonials ]

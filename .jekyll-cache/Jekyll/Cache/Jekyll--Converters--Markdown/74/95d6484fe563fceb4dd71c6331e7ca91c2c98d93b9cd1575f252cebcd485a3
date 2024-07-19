@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-19T19:52:02+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">TamilSelvan</title><subtitle>Portfolio</subtitle><author><name>TamilSelvan</name></author><entry><title type="html">Install Prometheus Operator with Grafana</title><link href="http://localhost:4000/devops/2024/07/18/prometheus/" rel="alternate" type="text/html" title="Install Prometheus Operator with Grafana" /><published>2024-07-18T00:00:00+05:30</published><updated>2024-07-18T00:00:00+05:30</updated><id>http://localhost:4000/devops/2024/07/18/prometheus</id><content type="html" xml:base="http://localhost:4000/devops/2024/07/18/prometheus/"><![CDATA[<h1 id="setting-up-prometheus-operator-with-helm-and-nginx-ingress">Setting Up Prometheus Operator with Helm and Nginx Ingress</h1>
+I"'<h1 id="setting-up-prometheus-operator-with-helm-and-nginx-ingress">Setting Up Prometheus Operator with Helm and Nginx Ingress</h1>
 
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
@@ -32,32 +32,32 @@ helm repo update
 
 <p>Create an Ingress resource for Prometheus by creating a file named <code class="language-plaintext highlighter-rouge">prometheus-ingress.yml</code> with the following content:</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
-<span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">prometheus-ingress</span>
-  <span class="na">namespace</span><span class="pi">:</span> <span class="s">monitoring</span>
-  <span class="na">annotations</span><span class="pi">:</span>
-    <span class="na">cert-manager.io/cluster-issuer</span><span class="pi">:</span> <span class="s">letsencrypt-prod</span>
-    <span class="na">nginx.ingress.kubernetes.io/rewrite-target</span><span class="pi">:</span> <span class="s">/</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prometheus-ingress
+  namespace: monitoring
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/rewrite-target: /
 
-<span class="na">spec</span><span class="pi">:</span>
-  <span class="na">ingressClassName</span><span class="pi">:</span> <span class="s">nginx</span>
-  <span class="na">rules</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">prometheus.faveocloud.com</span>
-    <span class="na">http</span><span class="pi">:</span>
-      <span class="na">paths</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
-        <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
-        <span class="na">backend</span><span class="pi">:</span>
-          <span class="na">service</span><span class="pi">:</span>
-            <span class="na">name</span><span class="pi">:</span> <span class="s">prometheus-kube-prometheus-prometheus</span>
-            <span class="na">port</span><span class="pi">:</span>
-              <span class="na">number</span><span class="pi">:</span> <span class="m">9090</span>
-  <span class="na">tls</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">hosts</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">prometheus.faveocloud.com</span>
-    <span class="na">secretName</span><span class="pi">:</span> <span class="s">prometheus-tls</span>
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: prometheus.faveocloud.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: prometheus-kube-prometheus-prometheus
+            port:
+              number: 9090
+  tls:
+  - hosts:
+    - prometheus.faveocloud.com
+    secretName: prometheus-tls
 </code></pre></div></div>
 <p>Apply the Ingress resource</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply -f prometheus-ingress.yml
@@ -111,4 +111,5 @@ spec:
 kubectl describe certificate prometheus-tls -n monitoring
 kubectl describe certificate grafana-tls -n monitoring
 </code></pre></div></div>
-<p>These steps should help you set up Prometheus and Grafana with Ingress and TLS certificates in your Kubernetes cluster.</p>]]></content><author><name>TamilSelvan M</name></author><category term="DevOps" /><category term="DevOps" /><summary type="html"><![CDATA[Setting Up Prometheus Operator with Helm and Nginx Ingress]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/prometheus-grafana.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/prometheus-grafana.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>These steps should help you set up Prometheus and Grafana with Ingress and TLS certificates in your Kubernetes cluster.</p>
+:ET
