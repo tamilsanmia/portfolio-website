@@ -21,14 +21,14 @@ tags: DevOps
 ### 1. Create a new namespace for Prometheus Operator 
 
 Create a new namespace called `monitoring`:
-```
+```sh
 kubectl create namespace monitoring
 ```
 
 ### 2. Add the Prometheus Operator Helm repository
 
 Add the Prometheus community Helm repository and update it:
-```
+```sh
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```
@@ -37,7 +37,7 @@ helm repo update
 
 Install the Prometheus Operator chart from the prometheus-community repository into the monitoring namespace:
 
-```
+```sh
 helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
 ```
 
@@ -74,7 +74,7 @@ spec:
     secretName: prometheus-tls
 ```
 Apply the Ingress resource
-```
+```sh
 kubectl apply -f prometheus-ingress.yml
 ```
 
@@ -82,7 +82,7 @@ kubectl apply -f prometheus-ingress.yml
 
 Create an Ingress resource for Grafana by creating a file named `grafana-ingress.yml` with the following content:
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -111,21 +111,21 @@ spec:
     secretName: grafana-tls
 ```
 Apply the Ingress resource
-```
+```sh
 kubectl apply -f grafana-ingress.yml
 ```
 ### 6. Obtain Grafana Admin Password
 
 Retrieve the Grafana admin password:
 
-```
+```sh
 kubectl get secret --namespace monitoring prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
 ### 7. Verify TLS Certificate Issuance
 
 Verify that the TLS certificates for Prometheus and Grafana are issued correctly:
 
-```
+```sh
 kubectl get certificates -n monitoring
 kubectl describe certificate prometheus-tls -n monitoring
 kubectl describe certificate grafana-tls -n monitoring
