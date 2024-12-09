@@ -8,8 +8,8 @@ hero:
   image: "assets/img/profile2.jpg"
   image_alt: "TamilSelvan-Profile"
   title: "<b>Tamil</b> Selvan"
-  before_title: "Hello, <b>my name is</b>"
-  after_title: "I am <strong>DevOps Engineer</strong>"
+  before_title: "Hi!, <b>I'm</b>"
+  after_title: "<strong>DevOps Engineer</strong>"
   description: "Passionate about Linux and cloud technologies with technical experience in live environments and strong hands on technical knowledge."
   button1:
     label: "Download CV"
