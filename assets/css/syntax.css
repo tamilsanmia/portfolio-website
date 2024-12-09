@@ -196,3 +196,8 @@
 .highlight .o {
   color: #f92672;
 }
+pre {
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Break long words */
+}
+
