@@ -95,4 +95,4 @@ exclude:
 sass:
   style: compressed
 
-markdown:  rouge
+markdown:  kramdown
