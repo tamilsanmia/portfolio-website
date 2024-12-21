@@ -82,16 +82,16 @@ skills:
   column1:
     items:
       - label: "Cloud Services"
-        text: "AWS<br>GCP<br>Digital Ocean"
+        text: "AWS<br>Digital Ocean"
 
       - label: "DB"
         text: "MySQL<br>MariaDB"
 
       - label: "Monitoring Tools"
-        text: "Nagios<br>Zabbix<br>Prometheus<br>Grafana"
+        text: "Zabbix<br>Prometheus<br>Grafana"
 
-      - label: "Front-end"
-        text: "HTML/CSS<br>Javasript<br>Bootstrap"
+#      - label: "Front-end"
+#        text: "HTML/CSS<br>Javasript<br>Bootstrap"
 
   column2:
     items:
@@ -99,13 +99,13 @@ skills:
         text: "Windows Server<br>Linux(Dedian and RedHat Based)" 
 
       - label: "CI/CD"
-        text: "Jenkins<br>Gitlab,Ansible,ArgoCD"
+        text: "Jenkins<br>Gitlab<br>Ansible<br>ArgoCD"
 
       - label: "Log Managaement"
         text: "Elesticsearch<br>Fluentbit<br>Kibana"
 
-      - label: "Back-end"
-        text: "PHP<br>APIs"
+#      - label: "Back-end"
+#        text: "PHP<br>APIs"
 
   column3:
     items:
@@ -118,8 +118,8 @@ skills:
       - label: "Container Orchestration"
         text: "Docker<br>Kubernetes"
 
-      - label: "CMS Platforms"
-        text: "Wordpress<br>Shopify"
+#      - label: "CMS Platforms"
+#        text: "Wordpress<br>Shopify"
 
 ### Resume [ resume ]
 resume:
