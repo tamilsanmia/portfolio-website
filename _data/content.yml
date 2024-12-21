@@ -99,7 +99,7 @@ skills:
         text: "Windows Server<br>Linux(Dedian and RedHat Based)" 
 
       - label: "CI/CD"
-        text: "Jenkins<br>Gitlab<br>Ansible<br>ArgoCD"
+        text: "Jenkins<br>Gitlab,ArgoCD<br>Ansible"
 
       - label: "Log Managaement"
         text: "Elesticsearch<br>Fluentbit<br>Kibana"
