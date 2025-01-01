@@ -143,9 +143,9 @@ resume:
   experience:
     title: "Experience"
     items:
-      - name: "Trainee DevOps Engineer"
+      - name: "Associate DevOps Engineer"
         subname: "Ladybird Web Solution Pvt Ltd"
-        period: "Jun 2023 - <b>Present</b>"
+        period: "Jun 2023 - <b>Nov 2024</b>"
         text: "As a DevOps Engineer at Ladybird Web Solutions Pvt Ltd. I was responsible for deploying and managing Faveo Helpdesk Ticketing system on both on premise and cloud."
 
       - name: "Wordpress Developer"
