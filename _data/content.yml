@@ -7,7 +7,7 @@
 hero:
   image: "assets/img/profile2.jpg"
   image_alt: "TamilSelvan-Profile"
-  title: "<b>Tamil</b> Selvan"
+  title: "<b>Tamil</b>Selvan"
   before_title: "Hi!, <b>I'm</b>"
   after_title: "a <strong>DevOps Engineer</strong>"
   description: "Passionate about Linux and cloud technologies with technical experience in live environments and strong hands on technical knowledge."
